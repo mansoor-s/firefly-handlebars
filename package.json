@@ -7,7 +7,7 @@
     "engines": ["node >= 0.8.7"],
     "main": "index.js",
     "dependencies": {
-        "handlebars": "latest",
+        "handlebars": "latest"
     },
     "repository": {
         "type" : "git",
