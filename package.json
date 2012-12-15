@@ -1,0 +1,17 @@
+{ 
+    "name": "firefly-handlebars",
+    "description": "Handlebars based renderer for Firefly",
+    "version": "0.0.1",
+    "url": "https://github.com/mansoor-s/firefly-handlebars",
+    "author": "Mansoor Sayed <mansoor@mansoorsayed.com>",
+    "engines": ["node >= 0.8.7"],
+    "main": "index.js",
+    "dependencies": {
+        "handlebars": "latest",
+    },
+    "repository": {
+        "type" : "git",
+        "url" : "git@github.com:mansoor-s/firefly-handlebars.git"
+    }
+}
+

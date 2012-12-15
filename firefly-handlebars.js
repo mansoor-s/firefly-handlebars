@@ -1,5 +1,5 @@
 /*
-    Firefly-Handlebars - Handlebars based renderer fore Firefly 
+    Firefly-Handlebars - Handlebars based renderer for Firefly 
     Copyright (C) <2012>  <Mansoor Sayed>
 
     This program is free software: you can redistribute it and/or modify
