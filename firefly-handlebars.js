@@ -30,7 +30,7 @@ var Handlebars = require('handlebars');
 * @param {Object} firefly Reference to the application Firefly object
 */
 var Renderer = module.exports = function(firefly) {
-    this.app = firefly
+    this.app = firefly;
    
     this._views = undefined;
     
@@ -54,7 +54,6 @@ var Renderer = module.exports = function(firefly) {
 * @private
 */
 Renderer.prototype._onInit = function() {
-    var self = this;
     return function(fn) {
         fn();
     };
@@ -73,6 +72,8 @@ Renderer.prototype.setViews = function(views, fn) {
     this._views = views;
     if (this.app.config.ENV !== 'dev') {
         this.buildCache(fn);
+    } else {
+        fn();
     }
     
 };
@@ -94,7 +95,6 @@ Renderer.prototype.buildCache = function(fn) {
         
         this.cache[viewPath] = template;
     }
-
     fn();
 };
 
